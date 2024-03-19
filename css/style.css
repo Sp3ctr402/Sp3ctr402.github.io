@@ -1,0 +1,40 @@
+/*----------------------------------------*\
+    #CONSTANTS
+\*----------------------------------------*/
+:root 
+{
+    --font-primary: 'Space Grotesk', sans-serif;
+    --bg-main: 222222;
+    --bg-secondary: F4F4F6;
+    --font-fill: D62839;
+    --fontcol-dark: black;
+    --fontcol-bright: white;
+}
+
+/*----------------------------------------*\
+    #GENERAL
+\*----------------------------------------*/
+body 
+{
+    font-family: var(--font-primary);       /* Set font */
+
+    background-color: var(--bg-secondary);  /* Set background color */
+    color: var(--fontcol-dark);             /* Set font color */
+
+    margin: 0;                              /* Remove margin */
+    padding: 0;                             /* Remove padding */
+}
+
+/*----------------------------------------*\
+    #HEADER
+\*----------------------------------------*/
+.header 
+{
+    width: 100%;                            /* Full width */
+    height: 50px;                           /* Set height */
+
+    border-bottom-left-radius: 10px;        /* Set border radius */
+    border-bottom-right-radius: 10px;       /* Set border radius */
+
+    background-color: var(--bg-main);       /* Set background color */
+}
