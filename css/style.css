@@ -4,9 +4,9 @@
 :root 
 {
     --font-primary: 'Space Grotesk', sans-serif;
-    --bg-main: 222222;
-    --bg-secondary: F4F4F6;
-    --font-fill: D62839;
+    --bg-main: #222222;
+    --bg-secondary: #F4F4F6;
+    --font-fill: #D62839;
     --fontcol-dark: black;
     --fontcol-bright: white;
 }
@@ -31,10 +31,14 @@ body
 .header 
 {
     width: 100%;                            /* Full width */
-    height: 50px;                           /* Set height */
+    height: 75px;                           /* Set height */
 
     border-bottom-left-radius: 10px;        /* Set border radius */
     border-bottom-right-radius: 10px;       /* Set border radius */
 
     background-color: var(--bg-main);       /* Set background color */
+
+    position: fixed;                        /* Set position */
+    top: 0;                                 /* Set position y-axis */
+    left: 0;                                /* Set position x-axis */
 }
