@@ -1,0 +1,31 @@
+/*----------------------------------------*\
+    #CONSTANTS
+\*----------------------------------------*/
+:root 
+{
+    --font-primary: 'Space Grotesk', sans-serif;
+    --bg-main: #222222;
+    --bg-secondary: #F4F4F6;
+    --font-fill: #D62839;
+    --fontcol-dark: black;
+    --fontcol-bright: #E6E6E9;
+    --fontcol-light: #919191;
+}
+
+/*----------------------------------------*\
+    #GENERAL
+\*----------------------------------------*/
+body 
+{
+    font-family: var(--font-primary);       /* Set font */
+
+    background-color: var(--bg-secondary);  /* Set background color */
+    color: var(--fontcol-dark);             /* Set font color */
+
+    margin: 0;                              /* Remove margin */
+    padding: 0;                             /* Remove padding */
+
+    display: flex;                          /* Set display */
+    flex-direction: column;                 /* Set flex direction */
+    min-height: 100px;                      /* Set min height */
+}

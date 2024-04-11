@@ -36,7 +36,7 @@ body
 .header 
 {
     width: 100%;                            /* Full width */
-    height: 75px;                           /* Set height */
+    height: 80px;                           /* Set height */
 
     border-bottom-left-radius: 10px;        /* Set border radius */
     border-bottom-right-radius: 10px;       /* Set border radius */
@@ -46,6 +46,25 @@ body
     position: fixed;                        /* Set position */
     top: 0;                                 /* Set position y-axis */
     left: 0;                                /* Set position x-axis */
+
+    display: flex;                          /* Set display to flex */
+    align-items: center;                    /* Center items vertically */
+    justify-content: flex-start;            /* Align items to the left */
+    padding-left: 10px;                     /* Set padding */ 
+}
+/*----------------------------------------*\
+    #HEADER > .home
+\*----------------------------------------*/
+.header .home
+{
+    border-radius: 50%;                     /* Set border radius */
+    width: 55px;                            /* Set width */
+    height: 55px;                           /* Set height */
+    transition: 0.3s;                       /* Set transition */
+}
+.header .home:hover
+{
+    transform: scale(1.15);                  /* Set scale */
 }
 /*----------------------------------------*\
     #HEADER > .navbar
@@ -53,9 +72,10 @@ body
 .header .navbar
 {
     display: flex;                          /* Set display */
-    justify-content: center;                /* Set justify content */
+    justify-content: flex-start;            /* Set justify content */
     align-items: center;                    /* Set align items */
 
+    padding-left: 20px;                     /* Set padding */
     height: 100%;                           /* Set height */
 }
 .header .navbar ul
@@ -68,8 +88,13 @@ body
 {
     text-decoration: none;                   /* Remove text decoration */
     color: var(--fontcol-light);             /* Set font color */
-    font-size: medium;                       /* Set font size */
-    transition: color 0.3s;                  /* Set transition */
+    font-size: 20px;                         /* Set font size */
+    transition: 0.3s;                        /* Set transition */
+}
+.header .navbar a:hover
+{
+    color: var(--fontcol-bright);            /* Set font color */
+    font-size: 24px;                         /* Set font size */
 }
 
 /*----------------------------------------*\
