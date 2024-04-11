@@ -8,7 +8,8 @@
     --bg-secondary: #F4F4F6;
     --font-fill: #D62839;
     --fontcol-dark: black;
-    --fontcol-bright: white;
+    --fontcol-bright: #E6E6E9;
+    --fontcol-light: #919191;
 }
 
 /*----------------------------------------*\
@@ -45,6 +46,30 @@ body
     position: fixed;                        /* Set position */
     top: 0;                                 /* Set position y-axis */
     left: 0;                                /* Set position x-axis */
+}
+/*----------------------------------------*\
+    #HEADER > .navbar
+\*----------------------------------------*/
+.header .navbar
+{
+    display: flex;                          /* Set display */
+    justify-content: center;                /* Set justify content */
+    align-items: center;                    /* Set align items */
+
+    height: 100%;                           /* Set height */
+}
+.header .navbar ul
+{
+    list-style: none;                       /* Remove list style */
+    display: flex;                          /* Set display */
+    gap: 20px;                              /* Set gap */   
+}
+.header .navbar a
+{
+    text-decoration: none;                   /* Remove text decoration */
+    color: var(--fontcol-light);             /* Set font color */
+    font-size: medium;                       /* Set font size */
+    transition: color 0.3s;                  /* Set transition */
 }
 
 /*----------------------------------------*\
