@@ -23,6 +23,10 @@ body
 
     margin: 0;                              /* Remove margin */
     padding: 0;                             /* Remove padding */
+
+    display: flex;                          /* Set display */
+    flex-direction: column;                 /* Set flex direction */
+    min-height: 100px;                      /* Set min height */
 }
 
 /*----------------------------------------*\
@@ -40,5 +44,23 @@ body
 
     position: fixed;                        /* Set position */
     top: 0;                                 /* Set position y-axis */
+    left: 0;                                /* Set position x-axis */
+}
+
+/*----------------------------------------*\
+    #FOOTER
+\*----------------------------------------*/
+.footer 
+{
+    width: 100%;                            /* Full width */
+    height: 150px;                          /* Set height */
+
+    border-top-left-radius: 10px;           /* Set border radius */
+    border-top-right-radius: 10px;          /* Set border radius */
+
+    background-color: var(--bg-main);       /* Set background color */
+
+    position: fixed;                        /* Set position */
+    bottom: 0;                              /* Set position y-axis */
     left: 0;                                /* Set position x-axis */
 }
