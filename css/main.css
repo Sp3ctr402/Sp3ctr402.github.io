@@ -28,6 +28,8 @@ body
     display: flex;                          /* Set display */
     flex-direction: column;                 /* Set flex direction */
     min-height: 100px;                      /* Set min height */
+
+    scroll-snap-type: y mandatory;          /* Set scroll snap */
 }
 
 /*----------------------------------------*\
@@ -96,21 +98,38 @@ body
     color: var(--fontcol-bright);            /* Set font color */
     font-size: 24px;                         /* Set font size */
 }
+/*----------------------------------------*\
+    #MAIN
+\*----------------------------------------*/
+main
+{
+    margin-top: 100px;
+}
+/*----------------------------------------*\
+    #MAIN > .section
+\*----------------------------------------*/
+.section 
+{
+    scroll-snap-align: start;               /* Set scroll snap align */
 
+    height: 100vh;                          /* Set height */
+    width: 100vh;                           /* Set width */
+}
 /*----------------------------------------*\
     #FOOTER
 \*----------------------------------------*/
 .footer 
 {
+    scroll-snap-align: start;               /* Set scroll snap align */
+
     width: 100%;                            /* Full width */
-    height: 150px;                          /* Set height */
+    height: calc(100vh - 40vh);             /* Set height */
 
     border-top-left-radius: 10px;           /* Set border radius */
     border-top-right-radius: 10px;          /* Set border radius */
 
     background-color: var(--bg-main);       /* Set background color */
 
-    position: fixed;                        /* Set position */
     bottom: 0;                              /* Set position y-axis */
     left: 0;                                /* Set position x-axis */
 }
