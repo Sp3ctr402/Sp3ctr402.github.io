@@ -17,10 +17,12 @@
 \*----------------------------------------*/
 body 
 {
-    font-family: var(--font-primary);       /* Set font */
+    font-family: var(--font-primary);                   /* Set font */
+    color: var(--fontcol-dark);                         /* Set font color */
 
-    background-color: var(--bg-secondary);  /* Set background color */
-    color: var(--fontcol-dark);             /* Set font color */
+    background-image: url('../images/background_pic.jpg');  /* Set background image */
+    background-image: scale(0.7);                           /* Set background scale */
+    background-blend-mode: darken;                          /* Set background blend mode */
 
     margin: 0;                              /* Remove margin */
     padding: 0;                             /* Remove padding */
@@ -112,8 +114,8 @@ main
 {
     scroll-snap-align: start;               /* Set scroll snap align */
 
-    height: 100vh;                          /* Set height */
-    width: 100vh;                           /* Set width */
+    height: auto;                          /* Set height */
+    width: auto;                           /* Set width */
 }
 /*----------------------------------------*\
     #FOOTER
