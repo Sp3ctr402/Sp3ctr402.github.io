@@ -23,6 +23,8 @@ body {
 
     background-color: var(--bright-color);
 
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
     cursor: default;
 }
 /*-------------------------------*\
@@ -37,6 +39,20 @@ header{
     background-color: var(--dark-color);  
     border-bottom-left-radius: 10px;  
     border-bottom-right-radius: 5px;
+}
+.navbar{
+    position: fixed;
+}
+.navbar a{
+    float: left;
+    padding:2vh;
+
+    display: block;
+
+    color: var(--bg-color-medium);
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
 }
 /*-------------------------------*\
 CONTENT
