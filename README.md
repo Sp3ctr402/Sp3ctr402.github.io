@@ -3,6 +3,10 @@
 🟩 > My official website for blogs etc.
 
 ​🟥 > First goal is an appealing layout
+
+🟥 > Layout for blog/dev articles
+
+🟥 > Little web apps
 #
 
 ## 🔗​Helpful and inspirational sources
