@@ -39,10 +39,10 @@ header{
 
     width: 100vw;
     height: 7vh;
+    align-items: center;
 
     display: flex;
     flex-direction: row;
-    align-items: center;
 
     background-color: var(--dark-color);  
     border-bottom-left-radius: 10px;  
@@ -53,7 +53,6 @@ header{
     transition: top 0.25s;
 }
 .navbar a{
-    float: left;
     position: relative;
 
     display: block;
@@ -76,48 +75,41 @@ header{
     color: var(--accent-color-active);
     font-size: 0.97em;
 }
-.navbar button{
-    float: left;
-    position: relative;
-
-    display: block;
-    margin-left: 1.75%;
-
-    color: var(--bg-color-medium);
-    font-size: 1em;
-    font-weight: bold;
-    font-variant: small-caps;
-    text-align: center;
-    text-decoration: none;
-    background: none;
-    border:none;
-
-    transition: 0.15s;
-}
-.navbar button:hover{
-    color: var(--accent-color);
-    font-size: 1.05em;
-} 
-.navbar button:active{
-    color: var(--accent-color-active);
-    font-size: 0.97em;
-}
 .navbar .socials{
-    margin: 2vw;
+    margin-left: auto;
+    margin-right: 1.75%;
 
-    height: 4vh;
+    position: relative;
+    align-self: center;
+
+    height: 5vh;
     min-width: 10vw;
 
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-around;
+    padding-right: 0.175rem;
 
     border-radius: 25px;
     
     background-color: var(--bright-color);
 }
-.navbar .socials a{
-    display: none;
+.navbar .socials a img{    
+    height: 4vh;
+    width: auto;
+
+    display: block;
+
+    transition: 0.15s;
+}
+.navbar .socials a img:hover{
+    height: calc(4vh * 1.15);
+    width: auto;
+}
+.navbar .socials a img:active{
+    height: calc(4vh * 0.97);
+    width: auto;
 }
 /*-------------------------------*\
 CONTENT
