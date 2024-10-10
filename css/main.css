@@ -9,6 +9,7 @@ CONSTANTS
     --bg-color-medium: #D2D2D2;
     --bg-color-dark: #B4B4B4;
     --bg-color-verydark: #707070;
+    --bg-color-ultradark: #473a40;
   }
 /*-------------------------------*\
 GENERAL
@@ -82,7 +83,7 @@ header{
     position: relative;
     align-self: center;
 
-    height: 5vh;
+    height: 4vh;
     min-width: 10vw;
 
     display: flex;
@@ -96,7 +97,7 @@ header{
     background-color: var(--bright-color);
 }
 .navbar .socials a img{    
-    height: 4vh;
+    height: 3.5vh;
     width: auto;
 
     display: block;
@@ -104,11 +105,11 @@ header{
     transition: 0.15s;
 }
 .navbar .socials a img:hover{
-    height: calc(4vh * 1.15);
+    height: calc(3.5vh * 1.15);
     width: auto;
 }
 .navbar .socials a img:active{
-    height: calc(4vh * 0.97);
+    height: calc(3.5vh * 0.97);
     width: auto;
 }
 /*-------------------------------*\
@@ -116,7 +117,7 @@ CONTENT
 \*-------------------------------*/
 .content{
     max-width: 100vw;
-    min-height: 300vh;
+    min-height: 90vh;
 
     background-color: var(--bright-color);
 }
@@ -126,9 +127,13 @@ FOOTER
 footer{
     bottom: 0;
 }
-.impressum {
+.bottom {
     max-width: 100vw;
     height: 10vh;
+
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
 
     background-color: var(--dark-color);
     border-top-left-radius: 10px;  
@@ -136,7 +141,11 @@ footer{
 
     transition: top 0.25s;
 }
-.impressum img{
+.bottom p, .bottom a{
+    color: var(--bg-color-verydark);
+    margin: 0 1rem;
+}
+.bottom img{
     height: 77%;
     width: calc(height/1.1);
 } 
