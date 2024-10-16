@@ -107,7 +107,7 @@ HEADER
     transition: 0.15s;
 }
 .navbar .socials a img:hover{
-    height: calc(3.5vh * 1.15);
+    height: calc(3.5vh * 1.10);
     width: auto;
 }
 .navbar .socials a img:active{
@@ -128,8 +128,24 @@ CONTENT
 
     font-family: 'Courier New', Courier, monospace  ;
 }
+.content .column1{
+    float: left;
+    width: 75%;
+}
+.content .column2{
+    float: left;
+    width: 25%;
+}
+.content .column1 .section{
+    padding: 3.5vh;
 
-.content p{
+    color: var(--bright-color);
+
+    opacity: 1;
+}
+.content .column2 .sidemenu{
+    padding: 3.5vh;
+
     color: var(--bright-color);
 
     opacity: 1;
