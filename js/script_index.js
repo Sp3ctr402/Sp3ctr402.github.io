@@ -14,9 +14,9 @@ window.onscroll = function() {
 /* TYPEBAR */
 const texts = [
   "Welcome to my homepage !",
-  "Test 1",
-  "Test 2",
-  "Test 3"
+  "Current Blog: *PLACEHOLDER*",
+  "Current Project: C++ Chess Engine",
+  "Enjoy your day !"
 ];
 
 let textIndex = 0;
