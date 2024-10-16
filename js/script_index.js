@@ -33,7 +33,7 @@ function typeText() {
     charIndex++;
     setTimeout(typeText, getRandomSpeed(100, 250)); 
   } else {
-    setTimeout(deleteText, 1000); 
+    setTimeout(deleteText, 2000); 
   }
 }
 function deleteText() {
@@ -46,7 +46,7 @@ function deleteText() {
     setTimeout(deleteText, getRandomSpeed(50, 125));
   } else {
     textIndex = (textIndex + 1) % texts.length; 
-    setTimeout(typeText, 150);
+    setTimeout(typeText, 1000);
   }
 }
 window.onload = function() {
