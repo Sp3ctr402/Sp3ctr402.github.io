@@ -117,38 +117,61 @@ HEADER
 /*-------------------------------*\
 CONTENT
 \*-------------------------------*/
-.content{
+.content {
+    position: relative;
     margin-top: 7vh;
 
     max-width: 100vw;
     min-height: calc(100vh - 7vh - 10vh);
 
+    font-family: 'Courier New', Courier, monospace;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.content-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-color: black;
     opacity: 0.6;
+    z-index: -1;
+}
+.content .typingbar{
+    padding: 7vh;
 
-    font-family: 'Courier New', Courier, monospace  ;
-}
-.content .column1{
-    float: left;
-    width: 75%;
-}
-.content .column2{
-    float: left;
-    width: 25%;
-}
-.content .column1 .section{
-    padding: 3.5vh;
+    height: 8vh;
+    width: 100vw;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 0;
+}
+.content .typingbar p{
+    font-size: 3em;
     color: var(--bright-color);
-
-    opacity: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 4px var(--bright-color);
+    width: 0;
+    animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
 }
-.content .column2 .sidemenu{
-    padding: 3.5vh;
-
-    color: var(--bright-color);
-
-    opacity: 1;
+@keyframes typing{
+    from {width: 0;}
+    to {width: 100%;}
+}
+@keyframes blink-caret{
+    from, to {border-color: transparent;}
+    50% {border-color: var(--bright-color);}
 }
 /*-------------------------------*\
 FOOTER
