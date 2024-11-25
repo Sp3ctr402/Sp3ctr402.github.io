@@ -16,6 +16,7 @@
 ##
 
 ## 📖​Resources
++ https://fonts.google.com/ - for fonts
 ##
 
 ## 📈Future Plans
