@@ -1,4 +1,5 @@
-<h1><img height="265" align="left" src="images/phoenix.png">🌐|​ Sp3ctr402 - Website</h1>
+<h1>🌐|​ Sp3ctr402 - Website</h1>
+<img height="250" align="left" src="images/phoenix.png">
 
 🟩 > My official website for blogs etc.
 
@@ -7,6 +8,10 @@
 🟥 > Layout for blog/dev articles
 
 🟥 > Little web apps
+
+🟥 > First article
+
+🟥 > Important infos
 
 #
 
