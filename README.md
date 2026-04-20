@@ -1,14 +1,23 @@
-<table>
-  <tr>
-    <td width="64">
-      <img src="public/phnx-logo.png" alt="PHNX Logo" width="48" />
-    </td>
-    <td>
-      <h1>PHNX Personal Site</h1>
-    </td>
-  </tr>
-</table>
+<img align="right" src="public/phnx-logo.png">
 
-Eine persönliche PHNX-Website mit großem Hero-Bereich, atmosphärischem Hintergrundbild und zentralem Content-Wechsel ohne Seitenreload.
+#
 
-Enthalten sind die Bereiche **Home**, **Career** und **Blog**, dazu ein umschaltbarer **Light-/Dark-Mode**, Social Links im Header und ein reduzierter, markenorientierter Look auf Basis des PHNX-Designs.
+<h1>🌐​|​ Personal Website</h1>
+
+## 📄 | About
+This is my personal website where i publish blogs and update my career.
+
+> [!NOTE]  
+> Highlights information that users should take into account, even when skimming.
+
+> [!TIP]
+> Optional information to help a user be more successful.
+
+> [!IMPORTANT]  
+> Crucial information necessary for users to succeed.
+
+> [!WARNING]  
+> Critical content demanding immediate user attention due to potential risks.
+
+> [!CAUTION]
+> Negative potential consequences of an action.

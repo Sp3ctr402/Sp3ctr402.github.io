@@ -1,25 +1,55 @@
 {
   "heroTag": "Blog",
   "title": "Notes, Builds & Learnings",
-  "intro": "Der Blog-Bereich ist als statischer Content-Layer umgesetzt. Dadurch lädt er sofort, kann über GitHub Pages gehostet werden und lässt sich später auf einen echten Headless- oder Serverless-Workflow erweitern.",
+  "intro": "Blogeinträge werden als Markdown gepflegt. Die Übersicht zeigt standardmäßig die fünf neuesten Einträge, Detailansichten laden innerhalb derselben Seite ohne vollständigen Reload.",
   "posts": [
     {
+      "slug": "phnx-site-vision",
+      "date": "2026-04-20",
+      "title": "Warum diese Website bewusst wie ein Produkt behandelt wird",
+      "excerpt": "Eine persönliche Seite ist für mich kein statisches Visitenkarten-Template, sondern eine technische Oberfläche mit klarer Brand, definierter Struktur und echtem Zweck.",
+      "tags": ["Brand", "Product", "Portfolio"],
+      "readTime": "4 min"
+    },
+    {
+      "slug": "vite-github-pages-flow",
       "date": "2026-04-18",
-      "title": "Warum ich für diese Site bewusst auf ein klassisches Backend verzichte",
-      "excerpt": "GitHub Pages ist schnell, billig und robust – aber eben statisch. Für eine persönliche Website ist das ein Vorteil, solange man den Content sauber strukturiert und die Architektur offen hält.",
-      "tags": ["Architecture", "GitHub Pages", "Performance"]
+      "title": "Sauberer Deploy-Flow mit Vite und GitHub Pages",
+      "excerpt": "Der Schlüssel ist eine klare Trennung zwischen Quellcode, Build-Artefakt und Deployment. Genau dadurch bleibt die Seite lokal schnell und auf GitHub robust.",
+      "tags": ["Vite", "GitHub Pages", "Deploy"],
+      "readTime": "5 min"
     },
     {
+      "slug": "hero-layout-no-scroll",
+      "date": "2026-04-16",
+      "title": "Ein Hero, der wirklich in den Viewport passt",
+      "excerpt": "Ein großer Titel wirkt nur dann hochwertig, wenn er nicht gegen den Browser kämpft. Deshalb wird die Home-Seite auf Desktop bewusst auf einen Viewport optimiert.",
+      "tags": ["Layout", "UX", "Hero"],
+      "readTime": "4 min"
+    },
+    {
+      "slug": "markdown-blog-approach",
+      "date": "2026-04-14",
+      "title": "Warum Markdown für den Blog der pragmatische Weg ist",
+      "excerpt": "Markdown hält den Schreibprozess leicht, versionsfreundlich und unabhängig vom Frontend. Genau das macht es für eine persönliche Site attraktiv.",
+      "tags": ["Markdown", "Content", "Workflow"],
+      "readTime": "3 min"
+    },
+    {
+      "slug": "subtle-motion-and-hover",
+      "date": "2026-04-12",
+      "title": "Subtile Bewegung statt lauter Animation",
+      "excerpt": "Gute Interaktion muss nicht schreien. Kleine Hover- und Übergangseffekte reichen oft, um eine Oberfläche hochwertig und reaktiv wirken zu lassen.",
+      "tags": ["Motion", "UI", "Interaction"],
+      "readTime": "3 min"
+    },
+    {
+      "slug": "career-as-timeline",
       "date": "2026-04-10",
-      "title": "Single-Page Navigation ohne Seitenreload sauber umsetzen",
-      "excerpt": "Hash-Routing ist auf GitHub Pages die pragmatische Lösung: keine Server-Rewrites nötig, keine Reloads beim Wechsel zwischen Home, Career und Blog.",
-      "tags": ["SPA", "Routing", "Frontend"]
-    },
-    {
-      "date": "2026-04-02",
-      "title": "Design-Tokens zuerst: Warum das UI-System vor den Komponenten kommt",
-      "excerpt": "Farben, Oberflächen, Typografie und Zustände sollten zuerst stabil sein. Komponenten werden dann zu einer Ableitung des Systems statt zu isolierten Einzelfällen.",
-      "tags": ["Design System", "Tokens", "UI"]
+      "title": "Warum die Career-Seite einen Zeitstrahl bekommen hat",
+      "excerpt": "Ein Zeitstrahl zeigt nicht nur Stationen, sondern Entwicklung. Gerade bei technischen Profilen ist der Wechsel des Fokus oft wichtiger als einzelne Titel.",
+      "tags": ["Career", "Timeline", "Storytelling"],
+      "readTime": "4 min"
     }
   ]
 }

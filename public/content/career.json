@@ -1,35 +1,47 @@
 {
   "heroTag": "Career",
   "title": "Career & Experience",
-  "intro": "Eine fokussierte Übersicht über Rollen, Schwerpunkte und Arbeitsweise. Die Daten liegen hier bewusst als statischer Content vor, damit GitHub Pages ohne klassischen Server schnell ausliefern kann.",
+  "intro": "Eine kompakte Übersicht über Ausbildung, technische Schwerpunkte, Produktdenken und den Weg in Richtung eigener Software- und Startup-Projekte.",
   "items": [
     {
-      "period": "Heute",
+      "period": "Aktuell",
       "title": "Dualer Student & Software Builder",
-      "meta": "Eigene Produkte, Performanzfokus, Full-Stack-Denken",
-      "description": "Entwicklung eigener Software-Ideen mit Schwerpunkt auf klarer Architektur, schneller UI und solider technischer Basis. Fokus auf Produktdenken statt reiner Feature-Sammlung."
+      "meta": "Eigene Projekte, Architektur, Performance, Produktfokus",
+      "description": "Aufbau eigener Software-Ideen mit Fokus auf klarer Struktur, performanter Umsetzung und einer Oberfläche, die nicht nur funktioniert, sondern bewusst gestaltet ist.",
+      "highlights": ["Produktdenken", "Performance", "UX", "Code Quality"]
     },
     {
-      "period": "Aktuell",
-      "title": "Schwerpunkt: Systems & Tooling",
-      "meta": "C++, Python, TypeScript, UI-Architektur",
-      "description": "Arbeit an performanten Tools, datengetriebenen UIs und technischer Infrastruktur. Interesse an sauberem Code, verständlichen Strukturen und langfristig wartbaren Systemen."
+      "period": "Heute",
+      "title": "Fokus auf native Systeme und Tooling",
+      "meta": "C++, Python, TypeScript, Qt / PyQt, SQLite",
+      "description": "Besonderes Interesse an performanten Desktop-Tools, sauberen Datenflüssen, UIs mit wenig Overhead und Systemen, die langfristig verständlich bleiben.",
+      "highlights": ["C++", "Python", "TypeScript", "Tooling"]
     },
     {
       "period": "Laufend",
-      "title": "Produkt- und Startup-Ausrichtung",
-      "meta": "Von Idee zu MVP",
-      "description": "Aufbau einer persönlichen Plattform als Ausgangspunkt für Portfolio, Produktpräsentation, technische Artikel und spätere Karriere- bzw. Startup-Inhalte."
+      "title": "PHNX als persönliche technische Marke",
+      "meta": "Portfolio, Produkte, Blog, professionelle Außenwirkung",
+      "description": "Die Website dient als Basis für Projekte, technische Artikel, Karriereinhalte und die spätere Präsentation eigener Produkte unter einer konsistenten PHNX-Identität.",
+      "highlights": ["Branding", "Portfolio", "Blog"]
+    },
+    {
+      "period": "Nächster Schritt",
+      "title": "Vom Tool zum Produkt",
+      "meta": "MVP-Denken, Iteration, nachhaltiger Ausbau",
+      "description": "Langfristiges Ziel ist der Übergang von einzelnen technischen Lösungen zu eigenständigen Produkten mit realem Nutzen, sauberer Architektur und klarer Positionierung.",
+      "highlights": ["MVP", "Roadmap", "Iteration"]
     }
   ],
   "skills": [
     "C++",
     "Python",
     "TypeScript",
+    "Qt / PyQt",
     "SQLite",
-    "PyQt",
     "Vite",
     "UI Architecture",
-    "Performance Thinking"
+    "Performance Thinking",
+    "Product Thinking",
+    "System Design"
   ]
 }
