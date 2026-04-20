@@ -1,4 +1,4 @@
-<img align="right" src="public/phnx-logo.png">
+<img align="right" src="assets/logo.png">
 
 #
 

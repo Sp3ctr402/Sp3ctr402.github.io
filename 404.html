@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redirecting…</title>
+  </head>
+  <body>
+    <script>
+      const path = location.pathname.replace(/\/$/, '') || '/';
+      const search = location.search || '';
+      const hash = location.hash || '';
+      const basePath = location.pathname.replace(/\/[^/]*$/, '/') || '/';
+      sessionStorage.setItem('phnx-spa-redirect', `${path}${search}${hash}`);
+      location.replace(`${location.origin}${basePath}`);
+    </script>
+  </body>
+</html>

@@ -2,29 +2,90 @@
 <html lang="de">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="color-scheme" content="dark light" />
     <meta
       name="description"
-      content="Persönliche Single-Page-Website im PHNX-Design mit schneller Navigation ohne Seitenreload."
+      content="Persönliche Portfolio-Website von Philipp – statische Single-Page-Architektur mit Blog, Career und Theme-Toggle."
     />
-    <meta name="theme-color" content="#050505" />
-    <title>PHNX — Personal Website</title>
-    <link rel="icon" href="./phnx-logo.png" />
-    <link rel="preload" as="image" href="./hero-ambient.webp" fetchpriority="high" />
-    <link rel="preload" as="image" href="./phnx-logo.png" fetchpriority="high" />
-    <script>
-      (() => {
-        const stored = localStorage.getItem('phnx-theme');
-        const preferred = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
-        document.documentElement.dataset.theme = stored || preferred;
-      })();
-    </script>
+    <title>PHNX - Sp3ctr4 | Portfolio</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&family=Sora:wght@600;700&display=swap"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&family=Sora:wght@600;700&display=swap"
+      />
+    </noscript>
+
+    <link rel="preload" href="./styles.css" as="style" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preload" href="./assets/logo-512.webp" as="image" type="image/webp" />
+    <link rel="preload" href="./assets/hero-ambient.webp" as="image" type="image/webp" />
+    <link rel="modulepreload" href="./app.js" />
   </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="./src/main.ts"></script>
+  <body data-theme="dark">
+    <div class="app-shell">
+      <div class="background-layer" aria-hidden="true">
+        <img
+          class="background-image"
+          src="./assets/hero-ambient.webp"
+          alt=""
+          decoding="async"
+          fetchpriority="high"
+        />
+        <div class="background-gradient"></div>
+        <div class="background-grid"></div>
+        <div class="background-vignette"></div>
+      </div>
+
+      <header class="topbar">
+        <div class="topbar-side socials" id="socials"></div>
+
+        <button class="brand-button" id="brandHomeButton" data-route="/" aria-label="Zur Startseite">
+          <img src="./assets/logo-512.webp" alt="PHNX Logo" class="brand-logo"/>
+        </button>
+
+        <div class="topbar-side topbar-actions">
+          <button class="theme-toggle" id="themeToggle" type="button" aria-label="Theme wechseln">
+            <span class="theme-toggle-track">
+              <span class="theme-toggle-thumb"></span>
+            </span>
+            <span class="theme-toggle-label">Dark</span>
+          </button>
+
+          <nav class="page-nav" aria-label="Sektionen">
+            <button class="nav-link" type="button" data-route="/career">Karriere</button>
+            <button class="nav-link" type="button" data-route="/blog">Blog</button>
+          </nav>
+        </div>
+      </header>
+
+      <main class="viewport" id="viewport">
+        <section class="hero-stage route-home" id="heroStage">
+          <div class="hero-copy">
+            <p class="hero-kicker">Systems · Code · Product Thinking</p>
+            <h1 class="hero-title" id="heroTitle">Philipp</h1>
+            <p class="hero-subline" id="heroSubline">
+              Präzise Systeme, performanter Code und Produkte mit technischer Substanz.
+            </p>
+          </div>
+
+          <div class="hero-panels" id="heroPanels"></div>
+        </section>
+
+        <section class="content-stage" id="contentStage" aria-live="polite"></section>
+      </main>
+    </div>
+
+    <script type="module" src="./app.js"></script>
   </body>
 </html>

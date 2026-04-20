@@ -1,0 +1,15 @@
+{
+  "siteTitle": "Philipp Wöhler",
+  "tagline": "Dualer Student · Software, Systems & Build Engineering",
+  "subline": "Software Engineer · System Developer",
+  "socials": [
+    { "label": "GitHub", "href": "https://github.com/Sp3ctr402" },
+    { "label": "Mail", "href": "mailto:hello@example.com" }
+  ],
+  "coreStack": ["C++/C", "Python", "CMake", "Git", "Databases"],
+  "home": {
+    "latestBlogLabel": "Neuester Blog",
+    "careerLabel": "Aktuelle Station",
+    "stackLabel": "Core Stack"
+  }
+}

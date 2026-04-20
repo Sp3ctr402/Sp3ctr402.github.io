@@ -1,0 +1,14 @@
+{
+  "summary": "Lebenslauf und berufliche Entwicklung von Philipp Wöhler",
+  "items": [
+    {
+      "id": "station-1",
+      "period": "2022 – 2023",
+      "title": "Technische Orientierung",
+      "subtitle": "Fokus auf Software & Systeme",
+      "body": "Entscheidung für einen technischen Entwicklungspfad mit klarer Präferenz für Systeme, die nachvollziehbar, effizient und langlebig konstruiert sind.",
+      "highlights": ["Programmiergrundlagen", "Systemverständnis", "Technische Neugier"],
+      "current": false
+    }
+  ]
+}
