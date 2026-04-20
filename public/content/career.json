@@ -1,0 +1,35 @@
+{
+  "heroTag": "Career",
+  "title": "Career & Experience",
+  "intro": "Eine fokussierte Übersicht über Rollen, Schwerpunkte und Arbeitsweise. Die Daten liegen hier bewusst als statischer Content vor, damit GitHub Pages ohne klassischen Server schnell ausliefern kann.",
+  "items": [
+    {
+      "period": "Heute",
+      "title": "Dualer Student & Software Builder",
+      "meta": "Eigene Produkte, Performanzfokus, Full-Stack-Denken",
+      "description": "Entwicklung eigener Software-Ideen mit Schwerpunkt auf klarer Architektur, schneller UI und solider technischer Basis. Fokus auf Produktdenken statt reiner Feature-Sammlung."
+    },
+    {
+      "period": "Aktuell",
+      "title": "Schwerpunkt: Systems & Tooling",
+      "meta": "C++, Python, TypeScript, UI-Architektur",
+      "description": "Arbeit an performanten Tools, datengetriebenen UIs und technischer Infrastruktur. Interesse an sauberem Code, verständlichen Strukturen und langfristig wartbaren Systemen."
+    },
+    {
+      "period": "Laufend",
+      "title": "Produkt- und Startup-Ausrichtung",
+      "meta": "Von Idee zu MVP",
+      "description": "Aufbau einer persönlichen Plattform als Ausgangspunkt für Portfolio, Produktpräsentation, technische Artikel und spätere Karriere- bzw. Startup-Inhalte."
+    }
+  ],
+  "skills": [
+    "C++",
+    "Python",
+    "TypeScript",
+    "SQLite",
+    "PyQt",
+    "Vite",
+    "UI Architecture",
+    "Performance Thinking"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "heroTag": "Blog",
+  "title": "Notes, Builds & Learnings",
+  "intro": "Der Blog-Bereich ist als statischer Content-Layer umgesetzt. Dadurch lädt er sofort, kann über GitHub Pages gehostet werden und lässt sich später auf einen echten Headless- oder Serverless-Workflow erweitern.",
+  "posts": [
+    {
+      "date": "2026-04-18",
+      "title": "Warum ich für diese Site bewusst auf ein klassisches Backend verzichte",
+      "excerpt": "GitHub Pages ist schnell, billig und robust – aber eben statisch. Für eine persönliche Website ist das ein Vorteil, solange man den Content sauber strukturiert und die Architektur offen hält.",
+      "tags": ["Architecture", "GitHub Pages", "Performance"]
+    },
+    {
+      "date": "2026-04-10",
+      "title": "Single-Page Navigation ohne Seitenreload sauber umsetzen",
+      "excerpt": "Hash-Routing ist auf GitHub Pages die pragmatische Lösung: keine Server-Rewrites nötig, keine Reloads beim Wechsel zwischen Home, Career und Blog.",
+      "tags": ["SPA", "Routing", "Frontend"]
+    },
+    {
+      "date": "2026-04-02",
+      "title": "Design-Tokens zuerst: Warum das UI-System vor den Komponenten kommt",
+      "excerpt": "Farben, Oberflächen, Typografie und Zustände sollten zuerst stabil sein. Komponenten werden dann zu einer Ableitung des Systems statt zu isolierten Einzelfällen.",
+      "tags": ["Design System", "Tokens", "UI"]
+    }
+  ]
+}
