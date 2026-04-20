@@ -5,7 +5,7 @@
 <h1>🌐​|​ Personal Website</h1>
 
 ## 📄 | About
-This is my personal website where i publish blogs and update my career.
+This is my personal website where i publish blogs and updates about my career!
 
 > [!NOTE]  
 > Highlights information that users should take into account, even when skimming.
