@@ -1,6 +1,13 @@
 {
   "entries": [
     {
+      "slug": "mein-erster-echter-post",
+      "title": "Mein erster echter Post",
+      "date": "2026-03-04",
+      "excerpt": "Gute technische Texte erklären nicht nur das Was, sondern immer auch das Warum dahinter.",
+      "tags": ["Writing", "Documentation"]
+    },
+    {
       "slug": "notes-on-technical-writing",
       "title": "Notes on Technical Writing",
       "date": "2026-03-02",

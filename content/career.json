@@ -1,14 +1,140 @@
 {
-  "summary": "Lebenslauf und berufliche Entwicklung von Philipp Wöhler",
+  "summary": "Ausbildung und praktische Stationen mit Schwerpunkt auf Technik, Mikroelektronik, Software und systematischer Problemlösung.",
   "items": [
     {
-      "id": "station-1",
-      "period": "2022 – 2023",
-      "title": "Technische Orientierung",
-      "subtitle": "Fokus auf Software & Systeme",
-      "body": "Entscheidung für einen technischen Entwicklungspfad mit klarer Präferenz für Systeme, die nachvollziehbar, effizient und langlebig konstruiert sind.",
-      "highlights": ["Programmiergrundlagen", "Systemverständnis", "Technische Neugier"],
-      "current": false
+      "id": "bachelor-eit-dual",
+      "period": "09/2020 – vorauss. 08/2026",
+      "title": "Bachelor Elektro- und Informationstechnik (dual)",
+      "subtitle": "Schwerpunkt Mikroelektronik",
+      "body": "Duales Studium mit technischem Fokus auf Elektrotechnik, Informationstechnik und Mikroelektronik. Parallel dazu kontinuierlicher Praxistransfer in Entwicklungs-, Mess- und Automatisierungsaufgaben.",
+      "highlights": [
+        "Technischer Schwerpunkt: Mikroelektronik",
+        "Verzahnung von Theorie und praktischer Entwicklung",
+        "Systematisches Arbeiten an Hard- und Software-nahen Themen"
+      ],
+      "current": true,
+      "logo": "./assets/career/bachelor.png",
+      "logoAlt": "Logo der Hochschule oder Ausbildungsstätte",
+      "type": "Ausbildung"
+    },
+    {
+      "id": "renesas-werkstudent",
+      "period": "09/2020 – 03/2026",
+      "title": "Renesas Electronics Europe GmbH",
+      "subtitle": "Werkstudent",
+      "body": "Werkstudentische Tätigkeit mit Schwerpunkt auf Embedded-naher Entwicklung, Messtechnik, PCB-Design, internen Tools und Automatisierung. Die Rolle verband Hardwareverständnis mit praktischer Softwareentwicklung.",
+      "highlights": [
+        "Programmierung mit Arduino",
+        "Entwurf von Leiterplatten (PCBs)",
+        "Grundlagenschulungen zur Messtechnik",
+        "Durchführung von Fehleranalysen",
+        "Entwicklung einer Smart-Home-Schnittstelle auf Basis eines Renesas-Devices",
+        "Erstellung einer Webschnittstelle für Renesas-Schulungen",
+        "Entwicklung von Visual-Basic-Anwendungen für automatische Messungen mit TI-Karten",
+        "Entwurf und Implementierung einer Datenbank für SoC-, Schnittstellen- und Pin-Daten",
+        "Entwicklung eines Tools zur automatischen Pin-Zuordnung"
+      ],
+      "current": false,
+      "logo": "./assets/career/renesas.png",
+      "logoAlt": "Renesas Logo",
+      "type": "Praktische Erfahrung"
+    },
+    {
+      "id": "praktikum-lindschulte-kloppe",
+      "period": "02/2018",
+      "title": "Lindschulte & Kloppe GmbH",
+      "subtitle": "Praktikum",
+      "body": "Einblick in planungs- und infrastrukturbasierte Arbeitsprozesse mit Fokus auf Barrierefreiheit, technischer Dokumentation und computergestützter Planung.",
+      "highlights": [
+        "Gestaltung und Umbau von Haltestellen im Hinblick auf Barrierefreiheit",
+        "Berechnung von Material- und Aufwandskosten",
+        "Protokollieren einer Planbesprechung",
+        "Kennenlernen von AutoCAD",
+        "Arbeiten nach Aufgabenstellung mit AutoCAD",
+        "Arbeiten mit Microsoft Excel"
+      ],
+      "current": false,
+      "logo": "./assets/career/lindschulte-kloppe.png",
+      "logoAlt": "Logo von Lindschulte & Kloppe",
+      "type": "Praktische Erfahrung"
+    },
+    {
+      "id": "uni-koeln-unipraktikum",
+      "period": "01/2018",
+      "title": "Universität zu Köln",
+      "subtitle": "Universitätspraktikum",
+      "body": "Früher akademischer Einblick in verschiedene Fachgebiete und Hochschulformate. Ziel war das Kennenlernen universitärer Inhalte und Arbeitsweisen.",
+      "highlights": [
+        "Schnupperbesuche in Vorlesungen",
+        "Einblicke in Mathematik",
+        "Einblicke in Physik",
+        "Einblicke in Betriebswirtschaft"
+      ],
+      "current": false,
+      "logo": "./assets/career/uni-koeln.png",
+      "logoAlt": "Logo der Universität zu Köln",
+      "type": "Praktische Erfahrung"
+    },
+    {
+      "id": "berufserkundung-mkc",
+      "period": "02/2017",
+      "title": "MKC Michels & Kleberhoff Computer GmbH",
+      "subtitle": "Berufserkundungstage",
+      "body": "Praktische Einblicke in elektronische Fertigung, Montageprozesse und Qualitätssicherung im technischen Produktionsumfeld.",
+      "highlights": [
+        "Bestückung von Platinen",
+        "Montage von Endgeräten",
+        "Fertigung elektrischer Baugruppen und Systeme",
+        "Durchführung von Abschlusstests",
+        "Zuschneiden elektrischer Bauteile"
+      ],
+      "current": false,
+      "logo": "./assets/career/mkc.png",
+      "logoAlt": "MKC Logo",
+      "type": "Praktische Erfahrung"
+    },
+    {
+      "id": "berufserkundung-langenfeld",
+      "period": "06/2016",
+      "title": "Stadt Langenfeld",
+      "subtitle": "Berufserkundungstage · Stadtplanung und Denkmalschutz",
+      "body": "Einblick in kommunale Planung, Denkmalpflege und politische Entscheidungsprozesse auf Stadtebene.",
+      "highlights": [
+        "Mitarbeit an der Umgestaltung des Wasserturms Berghausen",
+        "Teilnahme an Ausschüssen des Stadtrates"
+      ],
+      "current": false,
+      "logo": "./assets/career/stadt-langenfeld.jpg",
+      "logoAlt": "Logo der Stadt Langenfeld",
+      "type": "Praktische Erfahrung"
+    },
+    {
+      "id": "kag-abitur",
+      "period": "08/2012 – 06/2020",
+      "title": "Konrad-Adenauer-Gymnasium",
+      "subtitle": "Abitur · außerschulisches Engagement in der KAG-BigBand",
+      "body": "Schulische Laufbahn bis zum Abitur, ergänzt durch außerschulisches Engagement in der BigBand. Neben dem fachlichen Fundament war hier auch langfristige Verbindlichkeit und Teamarbeit prägend.",
+      "highlights": [
+        "Abschluss: Abitur",
+        "Außerschulisches Engagement in der KAG-BigBand",
+        "Leistungskurse: Mathematik und Physik"
+      ],
+      "current": false,
+      "logo": "./assets/career/kag.png",
+      "logoAlt": "Logo des Konrad-Adenauer-Gymnasiums",
+      "type": "Ausbildung"
+    },
+    {
+      "id": "christopherus-grundschule",
+      "period": "08/2008 – 06/2012",
+      "title": "Christopherus Grundschule",
+      "subtitle": "Grundschule",
+      "body": "Frühe schulische Grundlage und Ausgangspunkt des weiteren Bildungswegs.",
+      "highlights": [
+        "Allgemeine schulische Grundlagen"
+      ],
+      "current": false,
+      "type": "Ausbildung"
     }
   ]
 }

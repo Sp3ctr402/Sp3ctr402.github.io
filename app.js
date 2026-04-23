@@ -26,6 +26,7 @@ const state = {
   blogIndex: null,
   blogShown: PAGE_SIZE,
   selectedPostSlug: null,
+  selectedCareerId: null,
   isNavigating: false,
 };
 
@@ -231,26 +232,42 @@ function renderCareerPage() {
     <div class="content-stage-inner career-page">
       <section class="page-hero">
         <p class="section-kicker">Karriere</p>
-        <h2 class="section-title">Lebenslauf und wichtige Stationen</h2>
+        <h2 class="section-title">Werdegang und wichtige Stationen</h2>
         <p class="section-body">${escapeHtml(state.career?.summary ?? '')}</p>
       </section>
 
       <section class="career-layout career-layout--timeline-only">
         <div class="career-list timeline-list">
-          ${items
-            .map(
-              (item) => `
-                <article class="career-list-item timeline-item ${state.selectedCareerId === item.id ? 'is-selected' : ''} ${item.current ? 'is-current' : ''}" data-career-id="${escapeHtml(item.id)}">
-                  <div class="timeline-item-head">
-                    <p class="timeline-period">${escapeHtml(item.period)}</p>
-                    ${item.current ? '<span class="timeline-status">läuft aktuell</span>' : ''}
+        ${items
+          .map(
+            (item) => `
+              <article class="career-list-item timeline-item ${state.selectedCareerId === item.id ? 'is-selected' : ''} ${item.current ? 'is-current' : ''}" data-career-id="${escapeHtml(item.id)}">
+                <div class="career-list-row">
+                  ${
+                    item.logo
+                      ? `<img
+                          class="career-logo"
+                          src="${escapeHtml(item.logo)}"
+                          alt="${escapeHtml(item.logoAlt ?? `${item.title} Logo`)}"
+                          loading="lazy"
+                          decoding="async"
+                        />`
+                      : ''
+                  }
+
+                  <div class="career-list-copy">
+                    <div class="timeline-item-head">
+                      <p class="timeline-period">${escapeHtml(item.period)}</p>
+                      ${item.current ? '<span class="timeline-status">läuft aktuell</span>' : ''}
+                    </div>
+                    <h3 class="timeline-title">${escapeHtml(item.title)}</h3>
+                    <p class="timeline-body">${escapeHtml(item.subtitle)}</p>
                   </div>
-                  <h3 class="timeline-title">${escapeHtml(item.title)}</h3>
-                  <p class="timeline-body">${escapeHtml(item.subtitle)}</p>
-                </article>
-              `,
-            )
-            .join('')}
+                </div>
+              </article>
+            `,
+          )
+          .join('')}
         </div>
 
         <div class="career-viewer" id="careerViewer">
@@ -273,15 +290,33 @@ function renderCareerViewer(item) {
   }
 
   viewer.innerHTML = `
-    <article class="article-viewer career-viewer-card ${item.current ? 'is-current' : ''}">
-      <div class="career-viewer-head">
-        <div>
-          <p class="viewer-meta">${escapeHtml(item.period)}</p>
-          <h3 class="article-title">${escapeHtml(item.title)}</h3>
+    <article class="article-viewer career-viewer-card viewer-panel-enter ${item.current ? 'is-current' : ''}">
+      <div class="career-viewer-top">
+        ${
+          item.logo
+            ? `<img
+                class="career-logo career-logo--viewer"
+                src="${escapeHtml(item.logo)}"
+                alt="${escapeHtml(item.logoAlt ?? `${item.title} Logo`)}"
+                loading="lazy"
+                decoding="async"
+              />`
+            : ''
+        }
+
+        <div class="career-viewer-main">
+          <div class="career-viewer-head">
+            <div>
+              <p class="viewer-meta">${escapeHtml(item.period)}</p>
+              <h3 class="article-title">${escapeHtml(item.title)}</h3>
+            </div>
+            ${item.current ? '<span class="inline-chip is-live">Laufend</span>' : ''}
+          </div>
+
+          <p class="article-excerpt">${escapeHtml(item.subtitle)}</p>
         </div>
-        ${item.current ? '<span class="inline-chip is-live">Laufend</span>' : ''}
       </div>
-      <p class="article-excerpt">${escapeHtml(item.subtitle)}</p>
+
       <div class="article-content">
         <p>${escapeHtml(item.body)}</p>
         ${(item.highlights ?? []).length ? `
@@ -415,7 +450,7 @@ async function renderBlogViewer(slug) {
   const markdown = await fetchText(`./content/blog/${slug}.md`);
 
   viewer.innerHTML = `
-    <article class="article-viewer">
+    <article class="article-viewer viewer-panel-enter">
       <p class="viewer-meta">${escapeHtml(toDisplayDate(post.date))}</p>
       ${renderMarkdown(markdown)}
     </article>
@@ -430,8 +465,8 @@ function renderBlogList() {
     <div class="content-stage-inner blog-page">
       <section class="page-hero">
         <p class="section-kicker">Blog</p>
-        <h2 class="section-title">Markdown-basierte Einträge ohne Seitenreload</h2>
-        <p class="section-body">Die Übersicht lädt standardmäßig nur die neuesten fünf Einträge. Weitere Beiträge werden schrittweise erweitert. Einzelne Artikel werden direkt in der bestehenden Shell nachgeladen.</p>
+        <h2 class="section-title">Blogeinträge über Projekte</h2>
+        <p class="section-body">Die Übersicht lädt standardmäßig nur die neuesten fünf Einträge. Weitere Beiträge werden schrittweise erweitert.</p>
       </section>
 
       <section class="blog-layout">
@@ -606,6 +641,24 @@ function attachEvents() {
       if (!slug || state.selectedPostSlug === slug) return;
       state.selectedPostSlug = slug;
       renderBlogList();
+      return;
+    }
+
+    const careerTrigger = event.target.closest('[data-career-id]');
+    if (careerTrigger) {
+      const careerId = careerTrigger.getAttribute('data-career-id');
+      if (!careerId || state.selectedCareerId === careerId) return;
+
+      state.selectedCareerId = careerId;
+
+      document.querySelectorAll('.career-list-item').forEach((node) => {
+        node.classList.toggle('is-selected', node.getAttribute('data-career-id') === careerId);
+      });
+
+      const selectedItem =
+        state.career?.items?.find((item) => item.id === careerId) ?? null;
+
+      renderCareerViewer(selectedItem);
       return;
     }
 
