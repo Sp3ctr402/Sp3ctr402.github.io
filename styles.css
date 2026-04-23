@@ -718,8 +718,35 @@ body[data-theme='light'] .article-viewer::before {
 
 .article-viewer,
 .viewer-placeholder {
-  min-height: min(760px, calc(100dvh - var(--nav-height) - 84px));
   padding: 24px;
+}
+
+@media (min-width: 1081px) {
+  .blog-viewer,
+  .career-viewer {
+    position: sticky;
+    top: 0;
+    align-self: start;
+  }
+
+  .article-viewer,
+  .viewer-placeholder {
+    height: min(760px, calc(100dvh - var(--nav-height) - 84px));
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    scrollbar-gutter: stable;
+  }
+
+  .article-viewer::-webkit-scrollbar,
+  .viewer-placeholder::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  .article-viewer::-webkit-scrollbar-thumb,
+  .viewer-placeholder::-webkit-scrollbar-thumb {
+    background: color-mix(in srgb, var(--text-primary) 16%, transparent);
+    border-radius: 999px;
+  }
 }
 
 .viewer-panel-enter {
