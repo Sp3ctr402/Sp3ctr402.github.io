@@ -1,18 +1,25 @@
 {
   "entries": [
     {
-      "slug": "mein-erster-echter-post",
-      "title": "Mein erster echter Post",
-      "date": "2026-03-04",
-      "excerpt": "Gute technische Texte erklären nicht nur das Was, sondern immer auch das Warum dahinter.",
-      "tags": ["Writing", "Documentation"]
+      "slug": "phnx-chess-v0",
+      "title": "PHNX-Chess V0",
+      "date": "2026-04-29",
+      "excerpt": "Grundlagen und erster Release von PHNX-Chess V0.",
+      "tags": ["Writing", "Blog", "Schach"]
     },
     {
-      "slug": "notes-on-technical-writing",
-      "title": "Notes on Technical Writing",
-      "date": "2026-03-02",
-      "excerpt": "Gute technische Texte erklären nicht nur das Was, sondern immer auch das Warum dahinter.",
-      "tags": ["Writing", "Documentation"]
+      "slug": "phnx-chess-v1",
+      "title": "PHNX-Chess V1",
+      "date": "2026-04-30",
+      "excerpt": "Verbesserte Suche durch Move Ordering.",
+      "tags": ["Writing", "Blog", "Schach"]
+    },
+    {
+      "slug": "phnx-chess-v2",
+      "title": "PHNX-Chess V2",
+      "date": "2026-05-01",
+      "excerpt": "Verbesserte Evaluation & V2.1 - Inkrementelle Evaluation.",
+      "tags": ["Writing", "Blog", "Schach"]
     }
   ]
 }
